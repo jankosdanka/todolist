@@ -91,12 +91,15 @@ if(inputText !== " "){
 
 checkRuta.addEventListener("click", () =>{
     if(checkRuta.checked === true){
+        userInput.done = true;
         li.style.textDecoration = "line-through";
     }
     else{
+        
+        userInput.done = false;
         li.style.textDecoration = "none";
     }
-
+    console.log(userInput);
 });
 
 });
@@ -107,3 +110,6 @@ checkRuta.addEventListener("click", () =>{
 
 
 list();
+
+localStorage.setItem("tasks", JSON.stringify(userList));
+
