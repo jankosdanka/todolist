@@ -8,7 +8,6 @@ html, body{
 .header{
     background-color: rgb(197, 193, 160);
     width: 100%;
-    margin-bottom: 20px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -48,6 +47,8 @@ h1{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    border: 1px solid black;
+
    
    
 
@@ -76,6 +77,10 @@ h1{
 
 .li-style{
 text-decoration: line-through;
+}
+
+li{
+    color: black;
 }
 
 
